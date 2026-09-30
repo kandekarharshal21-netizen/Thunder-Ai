@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Main Weather Section -->
+        <main class="glass-panel main-weather">
+            <header>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="city-search" placeholder="Search city..." autocomplete="off">
+                    <ul id="search-results" class="search-results hidden"></ul>
+                </div>
+                <div class="location-info">
+                    <h1 id="city-name">Loading...</h1>
+                    <p id="current-date">--</p>
+                </div>
+            </header>
+            
+            <div class="current-weather">
+                <div class="weather-icon-container">
+                    <i id="main-weather-icon" class="fas fa-spinner fa-spin"></i>
+                </div>
+                <div class="temperature">
+                    <span id="temp-value">--</span><span class="unit">°C</span>
+                </div>
+                <div class="weather-desc" id="weather-description">Fetching data...</div>
+            </div>
+        </main>
+
+        <!-- Sidebar / Details Section -->
+        <aside class="details-section">
+            <div class="glass-panel highlights">
+                <h2>Today's Highlights</h2>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <span class="label">Wind Speed</span>
+                        <div class="value-container">
+                            <i class="fas fa-wind"></i>
+                            <span id="wind-speed" class="value">-- km/h</span>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="label">Humidity</span>
+                        <div class="value-container">
+                            <i class="fas fa-tint"></i>
+                            <span id="humidity" class="value">-- %</span>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="label">UV Index</span>
+                        <div class="value-container">
+                            <i class="fas fa-sun"></i>
+                            <span id="uv-index" class="value">--</span>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="label">Precipitation</span>
+                        <div class="value-container">
+                            <i class="fas fa-cloud-rain"></i>
+                            <span id="precipitation" class="value">-- mm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-panel forecast">
+                <h2>7-Day Forecast</h2>
+                <div id="forecast-list" class="forecast-list">
+                    <!-- Dynamic Forecast Items -->
+                    <div class="loading">Loading forecast...</div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Dynamic Background Elements -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

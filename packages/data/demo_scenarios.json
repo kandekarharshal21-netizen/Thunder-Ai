@@ -1,0 +1,25 @@
+{
+  "scenarios": [
+    {
+      "id": "scenario_intensifying",
+      "name": "Severe Supercell & Squall Line Outbreak",
+      "description": "Rapidly organizing multicellular convective cluster with peak reflectivity of 58.5 dBZ, overshooting tops at -72°C, and cloud-to-ground lightning frequency of 42.8 strikes/min.",
+      "severity": "SEVERE",
+      "primary_threats": ["Destructive lightning clusters", "Microburst wind gusts > 65 km/h", "Localized severe hail core"]
+    },
+    {
+      "id": "scenario_developing",
+      "name": "Early Afternoon Convective Initiation",
+      "description": "Boundary layer convergence over elevated terrain initiating growing cumulus congestus. High CAPE (>2800 J/kg) with first flash detected.",
+      "severity": "HIGH",
+      "primary_threats": ["Rapid updraft surge", "Onset of cloud-to-ground lightning within 20m"]
+    },
+    {
+      "id": "scenario_decaying",
+      "name": "Dissipating Anvil Shield",
+      "description": "Cold pool outflow dominating; convective downdrafts causing cell collapse and transition into stratiform light-to-moderate rain.",
+      "severity": "MODERATE",
+      "primary_threats": ["Residual gust fronts", "Dying isolated lightning strikes"]
+    }
+  ]
+}
