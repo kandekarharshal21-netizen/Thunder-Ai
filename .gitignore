@@ -15,7 +15,7 @@ env/
 venv/
 
 # Build artifacts
-dist/
+
 build/
 *.egg-info/
 
